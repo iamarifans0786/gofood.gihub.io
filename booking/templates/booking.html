@@ -1,0 +1,119 @@
+{% load static %}
+{% include "header.html" %}
+
+
+<!-- Common section for page heading   -->
+<section class="common-part-page-heading">
+    <div class="common-part-container">
+        <div class="common-part-img-sec">
+            <img src="{% static 'image/common-page-name.jpg' %}" alt="pic">
+        </div>
+        <div class="sub-sec-1-content">
+            <h1>Booking</h1>
+            <h3>Home / <span>Book Table</span></h3>
+        </div>
+    </div>
+</section>
+
+
+    <!-- secion-2  -->
+    <section id="fast-food-sec-2">
+        <div class="fast-food-container-2">
+            <div class="sub-sec-2">
+                <div class="sub-sec-2-content">
+                    <h2> Reservation</h2>
+                    <h1>Book A Table<span> Now</span></h1>
+                    <p>Objectively pontificate quality models before intuitive information. Dramatically <br>
+                        recaptiualize
+                        multifunctional materials.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="booking-sec-3">
+        <div class="booking-sec-3-container">
+            <div class="booking-content">
+                <div class="booking-content-heading">
+                    <h1>Opening Time</h1><hr id="booking-st-line">
+                </div>
+                <div class="booking-content-timing">
+                    <div class="booking-content-time">
+                        <p>Monday - Wednesday</p>
+                        <p id="only-time">09:00 - 06:00</p>
+                    </div>
+                    <div class="booking-content-time">
+                        <p>Thursday - Friday</p>
+                        <p id="only-time">10:00 - 05:00</p>
+                    </div>
+                    <div class="booking-content-time">
+                        <p>Saturday</p>
+                        <p id="only-time">09:00 - 04:00</p>
+                    </div>
+                    <div class="booking-content-time">
+                        <p>Sunday</p>
+                        <p id="only-time" >07:00 - 09:00</p>
+                    </div>
+                </div>
+                <div class="booking-content-heading">
+                    <h1>Call Now</h1>
+                    <hr id="booking-st-line">
+                    <h2> +91 - 7398787242 </h2>
+                    <h2> +91 - 8299551242 </h2>
+                </div>
+            </div>
+            <div class="booking-form-detail">
+                <form action="#" method="post">
+                    {% csrf_token %}
+                    <div class="form-details-container">
+                        <div class="form-fields-contents">
+                            <p><input type="text" required placeholder="Full Name" name="full_name">
+                                <i class="fa-solid fa-user"></i>
+                            </p>
+                        </div>
+                        <div class="form-fields-contents">
+                            <p><input type="email" required placeholder="Email Address" name="email_id" >
+                                <i class="fa-solid fa-envelope"></i>
+                            </p>
+                        </div>
+                        <div class="form-fields-contents">
+                            <p><input type="number" required placeholder="Phone Number" name="phone_no" >
+                                <i class="fa-solid fa-phone"></i>
+                            </p>
+                        </div>
+                        <div class="form-fields-contents">
+                            <p><input type="date" required placeholder="Select Date" name="bookig_date">
+                                <i class="fa-solid fa-calendar-days"></i>
+                            </p>
+                        </div>
+                        <div class="form-fields-contents">
+                            <p><input type="time" required placeholder="Select Time" name="bookig_time" >
+                                <i class="fa-solid fa-clock"></i>
+                            </p>
+                        </div>
+                        <div class="form-fields-contents">
+                            <p><input type="number" required placeholder="Total Guests" name="total_guests" >
+                                <i class="fa-solid fa-user-group"></i>
+                            </p>
+                        </div>
+                        <div class="form-fields-contents comment-field ">
+                            <p> <textarea  cols="30" rows="10" placeholder="Write Message" name="spacial_message"></textarea>
+                                <i class="fa-solid fa-comment"></i>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="form-submit-btn">
+                        <input type="submit" value="Submit Request">
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+{% include "footer.html" %}

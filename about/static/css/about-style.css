@@ -1,0 +1,257 @@
+
+/* our strenght section  */
+.background-section {
+    background-color: #010F1C;
+    position: relative;
+    height: 650px;
+}
+
+.background-section img {
+    max-width: 100%;
+
+}
+
+.our-strenght-container {
+    position: relative;
+    /* border: 1px solid red; */
+}
+
+#about-us-our-strenght-sec-1 {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    /* border: 2px solid green; */
+}
+/* our strenght- section-1 */
+
+.our-strenght-fast-food-container-2 {
+    width: 100%;
+    height: 300px;
+}
+
+.our-strenght-sub-sec-2 {
+    position: relative;
+    text-align: center;
+    top: 28%;
+}
+
+.our-strenght-sub-sec-2 h2 {
+    color: red;
+    font-size: 25px;
+    font-family: 'Pacifico', cursive;
+}
+
+.our-strenght-sub-sec-2 span {
+    color: red;
+    font-family: 'Pacifico', cursive;
+}
+
+.our-strenght-sub-sec-2 h1 {
+    color: white;
+    font-family: 'Tilt Warp', cursive;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.our-strenght-sub-sec-2 p {
+    color: rgb(162, 139, 139);
+    font-weight: 700;
+    line-height: 30px;
+}
+
+/* our strenght section 2 */
+.our-strenght-sec-2-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* border: 1px solid green; */
+    position: absolute;
+    top: 50%;
+}
+
+.our-strenght-sec-2-box {
+    flex-basis: 30%;
+    text-align: center;
+    border-right: 4px dotted white;
+}
+
+.our-strenght-sec-2-box.for-border {
+    border: none;
+}
+
+.our-strenght-sec-2-box .strenght-svg-section {
+    margin: 15px 0px;
+}
+
+.our-strenght-sec-2-box h1 {
+    margin: 15px 0px;
+    color: white;
+}
+
+.our-strenght-sec-2-box p {
+    margin: 15px 15px;
+    line-height: 22px;
+    color: white;
+}
+
+/* chef party events  */
+.chef-party-events-container {
+    /* border: 1px solid red; */
+    width: 100%;
+    background-color: rgb(23, 24, 25);
+}
+
+.chef-party-events-box-1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.party-events-sub-box-1 {
+    flex-basis: 50%;
+    /* border: 2px solid green; */
+    align-self: center;
+}
+
+.chef-party-events-box-2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.chef-party-events-img-section img {
+    width: 100%;
+    /* height: 570px; */
+}
+
+.chef-party-events-text-sec {
+    text-align: center;
+    height: 300px;
+}
+
+.chef-party-events-text-sec h3 {
+    color: rgb(228, 197, 144);
+    font-size: 14px;
+}
+
+.chef-party-events-text-sec img {
+    width: 15%;
+    margin: 10px 0px;
+}
+
+.chef-party-events-text-sec h1 {
+    color: rgb(228, 197, 144);
+    font-size: 35px;
+    margin: 5px 0px;
+}
+
+.chef-party-events-text-sec p {
+    color: rgb(228, 197, 144);
+    font-size: 16px;
+    margin: 10px 30px;
+    line-height: 25px;
+}
+
+.chef-party-events-text-sec .meet-our-team-btn {
+    margin-top: 50px;
+}
+
+.chef-party-events-text-sec .meet-our-team-btn a {
+    text-decoration: none;
+    background-color: #fb5849;
+    border: none;
+    color: white;
+    font-weight: 600;
+    padding: 20px 30px;
+    border-radius: 20px;
+}
+
+.chef-party-events-text-sec .meet-our-team-btn a:hover {
+    background-color: black;
+    transition: ease 0.5s;
+}
+
+/* media query  */
+/* tab screen  */
+@media only screen and (max-width: 820px) {
+    /* our strenght section  */
+    .background-section {
+        background-color: #010F1C;
+        position: relative;
+        height: 120vh;
+    }
+
+    /* our strenght section 2 */
+    .our-strenght-sec-2-container {
+        flex-direction: column;
+        position: absolute;
+        top: 23%;
+    }
+
+    .our-strenght-sec-2-box {
+        border: 2px solid red;
+        width: 80%;
+        margin: 15px auto;
+        padding: 20px;
+    }
+
+    .our-strenght-sec-2-box.for-border {
+        border: 1px solid red;
+    }
+
+/* chef party events  */
+    .chef-party-events-box-1 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    .party-events-sub-box-1 {
+        /* border: 2px solid green; */
+        margin: 15px 0px;
+    }
+    
+    .chef-party-events-box-2 {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+    
+}
+
+/* Mobile screen  */
+@media only screen and (max-width: 450px) {
+    /* our strenght section  */
+    .background-section {
+        background-color: #010F1C;
+        position: relative;
+        height: 170vh;
+    }
+
+    /* our strenght section 2 */
+    .our-strenght-sec-2-container {
+        flex-direction: column;
+        position: absolute;
+        top: 23%;
+    }
+
+    .our-strenght-sec-2-box {
+        border: 2px solid red;
+        width: 80%;
+        margin: 15px auto;
+        padding: 20px;
+    }
+
+    .our-strenght-sec-2-box.for-border {
+        border: 1px solid red;
+    }
+
+    /* chef party events  */
+    .chef-party-events-container {
+        /* border: 1px solid red; */
+        margin-top: 70px;
+    }
+    .party-events-sub-box-1 {
+        /* border: 2px solid green; */
+        margin: 20px 0px;
+    }
+
+}

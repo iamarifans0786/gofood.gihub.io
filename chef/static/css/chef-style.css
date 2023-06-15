@@ -1,0 +1,244 @@
+/* why choose us  */
+.why-choose-us-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* border: 1px solid red; */
+    padding: 20px;
+    margin-bottom: 30px;
+
+}
+
+.why-choose-us-container-box {
+    flex-basis: 23%;
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.why-choose-us-img-sec {
+    position: relative;
+}
+
+.why-choose-us-container-box:hover {
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+.why-choose-us-icon {
+    /* border: 2px solid yellowgreen; */
+    position: absolute;
+    top: 70%;
+    left: 20%;
+}
+
+.why-choose-us-icon h1 {
+    font-size: 20px;
+    color: white;
+    margin: 10px 0px;
+}
+
+.why-choose-img-box-2-4 {
+    margin-top: 45px;
+}
+
+.why-choose-icon-box-1-3 {
+    margin-top: -45px;
+}
+
+.why-choose-us-section {
+    background-color: #010F1C;
+}
+
+/* main chef section  */
+.chef-page-config {
+    /* border: 2px solid red; */
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+.chef-page-config img {
+    width: 70%;
+}
+
+.chef-page-config-text {
+    /* border: 2px solid green; */
+    width: 70%;
+    margin: 0px auto;
+}
+
+.chef-page-config-text p {
+    margin: 0px;
+}
+
+/* our chef section  */
+.chef-page-our-chef-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 1px solid red; */
+    justify-content: space-evenly;
+    padding: 30px;
+}
+
+.chef-page-our-chef-box {
+    flex-basis: 30%;
+    /* border: 1px solid green; */
+    text-align: center;
+    position: relative;
+}
+
+.chef-page-our-chef-img-sec img {
+    width: 100%;
+}
+
+.chef-page-our-chef-box:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transition: ease-in-out 0.5s;
+}
+
+.chef-page-our-chef-icon-sec {
+    position: absolute;
+    top: 380px;
+    font-size: 30px;
+    color: white;
+    left: 30%;
+    display: none;
+}
+
+.chef-page-our-chef-box:hover .chef-page-our-chef-icon-sec {
+    display: flex;
+    transition: ease 0.6s;
+    cursor: pointer;
+}
+
+.chef-page-our-chef-icon-sec i {
+    margin: 0px 10px;
+}
+
+.chef-page-our-chef-icon-sec i:hover {
+    color: red;
+    transition: ease 0.4s;
+    cursor: pointer;
+}
+
+.chef-page-our-chef-text-sec h1 {
+    margin: 5px 0px;
+}
+
+.chef-page-our-chef-text-sec h1:hover {
+    color: red;
+    cursor: pointer;
+    transition: ease 0.3s;
+}
+
+.chef-page-our-chef-text-sec h2 {
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+/* media query  */
+
+/* tab screen  */
+@media only screen and (max-width: 820px) {
+
+    /* why choose us  */
+    .why-choose-us-container {
+        /* border: 1px solid red; */
+        padding: 50px;
+    }
+
+    .why-choose-us-container-box {
+        flex-basis: 50%;
+        margin: 20px 0px;
+    }
+
+    .why-choose-icon-box-1-3 {
+        margin-top: 0px;
+    }
+
+    /* main chef section  */
+    .chef-page-config img {
+        width: 100%;
+    }
+
+    /* our chef  */
+    .chef-page-our-chef-text-sec h1 {
+        margin: 5px 0px;
+        font-size: 20px;
+    }
+
+    .chef-page-our-chef-text-sec h2 {
+        font-size: 14px;
+    }
+
+    .chef-page-our-chef-icon-sec {
+        top: 210px;
+        left: 40px;
+    }
+
+    .chef-page-our-chef-icon-sec i {
+        margin: 0px 10px;
+    }
+
+}
+
+/* tab screen  */
+@media only screen and (max-width: 450px) {
+
+    /* why choose us  */
+    .why-choose-us-container {
+        /* border: 1px solid red; */
+        padding: 50px;
+        flex-direction: column;
+        margin-top: -50px;
+    }
+
+    .why-choose-us-container-box {
+        flex-basis: 50%;
+        margin: 20px 0px;
+    }
+
+    .why-choose-icon-box-1-3 {
+        margin-top: 0px;
+    }
+
+    /* main chef  */
+    .chef-page-config-main-container {
+        margin-top: -50px;
+    }
+
+    /* our chef section  */
+    .chef-page-our-chef-container {
+        flex-direction: column;
+    }
+
+    .chef-page-our-chef-box {
+        margin: 15px 0px;
+    }
+
+    .chef-page-our-chef-icon-sec {
+        top: 350px;
+        left: 100px;
+    }
+
+    .chef-page-our-chef-text-sec h1 {
+        margin: 5px 0px;
+        font-size: 25px;
+    }
+
+    .chef-page-our-chef-text-sec h2 {
+        font-size: 18px;
+    }
+
+}

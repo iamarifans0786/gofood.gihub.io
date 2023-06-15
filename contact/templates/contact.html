@@ -1,0 +1,132 @@
+{% load static %}
+{% include "header.html" %}
+
+
+<!-- Common section for page heading   -->
+<section class="common-part-page-heading">
+    <div class="common-part-container">
+        <div class="common-part-img-sec">
+            <img src="{% static 'image/common-page-name.jpg' %}" alt="pic">
+        </div>
+        <div class="sub-sec-1-content">
+            <h1>Contact Us</h1>
+            <h3>Home / <span>Contact Us</span></h3>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Section-2 Boxes  -->
+    <section class="contact-section-2">
+        <div class="contact-sec-2-container">
+            <div class="contact-sec-2-small-box">
+                <div class="contact-box-icon">
+                    <i class="fa-solid fa-phone-volume"></i>
+                </div>
+                <div class="contact-box-heading">
+                    <h1>Call Now</h1>
+                </div>
+                <div class="contact-box-sub-heading">
+                    <p> +91 - 7398787242 </p>
+                    <p> +91 - 8299551242 </p>
+                </div>
+            </div>
+
+            <div class="contact-sec-2-small-box">
+                <div class="contact-box-icon">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="contact-box-heading">
+                    <h1>Email Now</h1>
+                </div>
+                <div class="contact-box-sub-heading">
+                    <p> info.arif73@gmail.com </p>
+                    <p> info.akash73@gmail.com </p>
+                </div>
+            </div>
+
+            <div class="contact-sec-2-small-box">
+                <div class="contact-box-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="contact-box-heading">
+                    <h1>
+                        Location
+                    </h1>
+                </div>
+                <div class="contact-box-sub-heading">
+                    <address> Birla Market Main Road Renukoot <br>
+                        Varansi UP Pin-231217</address>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- form-section -->
+
+    <div class="booking-form-detail">
+        <form action="#" method="post">
+            {% csrf_token %}
+            <div class="form-details-container">
+                <div class="form-fields-contents">
+                    <p><input type="text" required placeholder="Full Name" name="full_name">
+                        <i class="fa-solid fa-user"></i>
+                    </p>
+                </div>
+                <div class="form-fields-contents">
+                    <p><input type="email" required placeholder="Email Address" name="email_id">
+                        <i class="fa-solid fa-envelope"></i>
+                    </p>
+                </div>
+                <div class="form-fields-contents">
+                    <p><input type="number" required placeholder="Phone Number" name="phone_no">
+                        <i class="fa-solid fa-phone"></i>
+                    </p>
+                </div>
+                <div class="form-fields-contents">
+                    <p><input type="text" required placeholder="Subject" name="subject">
+                        <i class="fa-solid fa-clipboard-question"></i>
+                    </p>
+                </div>
+
+                <div class="form-fields-contents comment-field ">
+                    <p> <textarea cols="30" rows="10" placeholder="Write Message" name="complaint"></textarea>
+                        <i class="fa-solid fa-comment"></i>
+                    </p>
+                </div>
+            </div>
+            <div class="form-submit-btn">
+                <input type="submit" value="Submit Request">
+            </div>
+
+        </form>
+    </div>
+
+
+
+    <!-- jio location section  -->
+
+    <section class="jio-location">
+        <div class="map-location-brower">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29109.453746426043!2d83.0223510886393!3d24.21792433797578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398edafec6af003d%3A0xd34f5755bc241ed3!2sRenukoot%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1678100066882!5m2!1sen!2sin"
+                width="1300" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="map-location-tab">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29109.453746426003!2d83.0223510886393!3d24.21792433797578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398edafec6af003d%3A0xd34f5755bc241ed3!2sRenukoot%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1678100968925!5m2!1sen!2sin"
+                width="700" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="map-location-phone">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29109.453746426003!2d83.0223510886393!3d24.21792433797578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398edafec6af003d%3A0xd34f5755bc241ed3!2sRenukoot%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1678100968925!5m2!1sen!2sin"
+                width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+
+{% include "footer.html" %}

@@ -1,0 +1,61 @@
+{% load static %}
+{% include "header.html" %}
+
+<!-- Common section for page heading   -->
+<section class="common-part-page-heading">
+    <div class="common-part-container">
+        <div class="common-part-img-sec">
+            <img src="{% static 'image/common-page-name.jpg' %}" alt="pic">
+        </div>
+        <div class="sub-sec-1-content">
+            <h1>News & Blogs </h1>
+            <h3>Home / <span>Our Blogs</span></h3>
+        </div>
+    </div>
+</section>
+
+
+<!-- secion-2 our news & blogs -->
+<section id="fast-food-sec-2">
+    <div class="fast-food-container-2">
+        <div class="sub-sec-2">
+            <div class="sub-sec-2-content">
+                <h2> News & Blog</h2>
+                <h1>Our Latest Foods<span> Blogs</span></h1>
+                <p>Objectively pontificate quality models before intuitive information. Dramatically <br>
+                    recaptiualize
+                    multifunctional materials.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="blog-page-wrapper">
+    <div class="blog-page-main-container">
+
+        {% for items in data %}
+        <div class="blog-page-boxes">
+            <div class="blog-page-img-sec">
+                <img src="{{ items.blog_img.url }}" alt="pic">
+            </div>
+            <div class="blog-page-date-tags">
+                <i class="fa-solid fa-user"> </i><span> {{ items.person_name }} </span>
+                <i class="fa-solid fa-calendar-days"></i><span>{{ items.date }} </span>
+                <i class="fa-solid fa-tags"></i><span>{{ items.food }}</span>
+            </div>
+            <div class="blog-page-title-sec">
+                <p>{{ items.blog_title }}</p>
+            </div>
+            <div class="blog-page-read-more-btn">
+                <a href="{% url 'blog_explore' items.id %}">Read More</a>
+            </div>
+        </div>
+        {% endfor %}
+       
+
+        
+    </div>
+</div>
+
+
+{% include "footer.html" %}

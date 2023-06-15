@@ -1,0 +1,46 @@
+{% load static %}
+{% include "header.html" %}
+
+<div class="booking-conform-container">
+    <div class="booking-conform-sec-1">
+        <div class="booking-hedading">
+            <h1> Booking Conformation </h1>
+            <hr>
+        </div>
+        <div class="booking-conform-img">
+            <img src="{% static 'image/booking-conform.png' %}" alt="pic">
+        </div>
+    </div>
+
+    <div class=" booking-conform-sec-2">
+        <div class="booking-conform-details">
+            <h1> Your Details :</h1>
+            <p><span class="lable"> Name : </span>
+                <span class="lable-detail"> {{ name }} </span>
+            </p>
+            <p><span class="lable"> Email-Id : </span>
+                <span class="lable-detail"> {{ email }} </span>
+            </p>
+            <p><span class="lable"> Mobile No : </span>
+                <span class="lable-detail"> +91 {{ phone }} </span>
+            </p>
+            <p><span class="lable"> Booking Date : </span>
+                <span class="lable-detail"> {{ date }} </span>
+            </p>
+            <p><span class="lable"> Booking Time : </span>
+                <span class="lable-detail"> {{ time }} </span>
+            </p>
+            <p><span class="lable"> Total Guests : </span>
+                <span class="lable-detail"> {{ guests }} </span>
+            </p>
+            <p><span class="lable"> Table No : </span>
+                {% for items in table %}
+                <span class="lable-detail"> {{ items.id }} </span>
+                {% endfor %}
+            </p>
+        </div>
+    </div>
+</div>
+
+
+{% include "footer.html" %}

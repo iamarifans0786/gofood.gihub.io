@@ -1,0 +1,37 @@
+{% include "header.html" %}
+
+<body>
+
+
+    <h1>Registration page</h1>
+    <form method="post">
+        {% csrf_token %}
+
+        <p>
+            Frist Name: <input type="text" name="fristname">
+        </p>
+        <p>
+            Last Name: <input type="text" name="lastname">
+        </p>
+        <p>
+            Email: <input type="email" name="email">
+        </p>
+        <p>
+            username: <input type="text" name="username">
+        </p>
+        <p>
+            Password: <input type="password" name="password">
+        </p>
+        <p>
+            <input type="submit" value="Submit">
+        </p>
+    </form>
+
+    {{masssge}}
+
+
+</body>
+
+</html>
+
+{% include "footer.html" %}

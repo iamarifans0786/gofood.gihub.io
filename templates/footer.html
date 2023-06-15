@@ -1,0 +1,124 @@
+{% load static %}
+ <!-- Footer Section  -->
+ <footer>
+    <div class="Footer-container">
+        <div class="section section-1">
+            <div class="company-logo">
+                <img src=" {% static 'image/header/footer-logo.png' %} " alt="Logo">
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-linkedin-in same-width"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram same-width"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp same-width"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f same-width "></i></a>
+                <a href="#"><i class="fa-brands fa-twitter same-width"></i></a>
+            </div>
+        </div>
+
+        <!-- Special Dises Section -->
+        <div class="section section-2">
+            <div class="footer-heading">
+                <h2> Special Dises </h2>
+            </div>
+            <div class="Footer-Links">
+                <ul>
+                    <a href="{% url 'fastfood' %}">
+                        <li> Bacon Burger </li>
+                    </a><a href="{% url 'fastfood' %}">
+                        <li> Pepperoni Pizza </li>
+                    </a><a href="{% url 'fastfood' %}">
+                        <li> Meatballs Pasta </li>
+                    </a><a href="{% url 'fastfood' %}">
+                        <li> Chocolate chip cookie</li>
+                    </a><a href="{% url 'fastfood' %}">
+                        <li> Borown Chocolate Dip </li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Recent Events Section -->
+        <div class="section section-2">
+            <div class="footer-heading">
+                <h2> Recent Events </h2>
+            </div>
+            <div class="Footer-Links">
+                <ul>
+                    <a href="#">
+                        <li> Valenstine's day </li>
+                    </a><a href="#">
+                        <li> New Yaer </li>
+                    </a><a href="#">
+                        <li> Crishmas </li>
+                    </a><a href="#">
+                        <li> Republic Day </li>
+                    </a><a href="#">
+                        <li> Diwali </li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Upcoming Events Section  -->
+        <div class="section section-3">
+            <div class="footer-heading">
+                <h2> Upcoming Events </h2>
+            </div>
+            <div class="Footer-Links">
+                <ul>
+                    <a href="#">
+                        <li> Holi </li>
+                    </a><a href="#">
+                        <li> Ramdan </li>
+                    </a><a href="#">
+                        <li> Eid </li>
+                    </a><a href="#">
+                        <li> Independence Day </li>
+                    </a><a href="#">
+                        <li> Muharram </li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Awesome Blogs Section  -->
+        <div class="section section-4">
+            <div class="footer-heading">
+                <h2> Quick Links </h2>
+            </div>
+            <div class="Footer-Links">
+                <ul>
+                    <a href="{% url 'aboutUs' %}">
+                        <li> About Us </li>
+                    </a><a href="{% url 'fastfood' %}">
+                        <li> Menus </li>
+                    </a><a href="{% url 'booking' %}">
+                        <li> Booking </li>
+                    </a><a href="{% url 'testimonial' %}">
+                        <li> Testimonials </li>
+                    </a><a href="{% url 'contact' %}">
+                        <li> Contact us </li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Last Section  -->
+        <div class="section-5">
+            <div class="company">
+                <p>© 2021–2022 Go-Food, Inc. · <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                </p>
+            </div>
+            <div class="goto-top-btn">
+                <a href="#"> <i class="fa-solid fa-turn-up go-top-btn"></i> </a>
+            </div>
+
+        </div>
+    </div>
+</footer>
+<script src=" {% static 'js/mobilemenu.js' %} "></script>
+<script src="{% static 'js/home.js' %}"></script>
+</body>
+
+</html>

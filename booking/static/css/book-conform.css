@@ -1,0 +1,114 @@
+.booking-conform-container {
+    /* border: 1px solid red; */
+    flex-wrap: wrap;
+    display: flex;
+    padding: 50px;
+    justify-content: space-evenly;
+}
+
+/* frist box  */
+.booking-conform-sec-1 {
+    flex-basis: 45%;
+    /* border: 2px solid green; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: center;
+}
+
+.booking-conform-sec-1 h1 {
+    color: green;
+    /* font-family: 'Dancing Script', cursive; */
+    font-family: 'Pacifico', cursive;
+    margin: 20px 0px;
+}
+
+.booking-conform-sec-1 .booking-conform-img {
+    padding: 20px;
+}
+
+/* second box  */
+.booking-conform-sec-2 {
+    flex-basis: 45%;
+    /* border: 2px solid green; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.booking-conform-sec-2 h1 {
+    font-family: 'Tilt Warp', cursive;
+    color: red;
+    margin: 5px 0px;
+}
+
+.booking-conform-sec-2 p {
+    margin: 5px 0px;
+}
+
+/* lable  */
+.booking-conform-sec-2 .lable {
+    font-size: 20px;
+    margin: 15px 10px;
+    font-weight: 700;
+}
+
+/* details  */
+.booking-conform-sec-2 .lable-detail {
+    font-size: 18px;
+}
+
+
+/* media query  */
+
+/* tab screen  */
+@media only screen and (max-width: 820px) {
+    .booking-conform-container {
+        margin-top: 98px;
+        padding: 50px;
+        flex-direction: column;
+    }
+
+    /* second box  */
+    .booking-conform-sec-2 {
+        margin: 20px 0px;
+    }
+
+    .booking-conform-sec-2 h1 {
+        margin: 5px 0px;
+    }
+
+}
+
+/* Mobile screen  */
+@media only screen and (max-width: 450px) {
+    .booking-conform-container {
+        margin-top: 0px;
+        padding: 0px;
+        flex-direction: column;
+    }
+
+    /* second box  */
+    .booking-conform-sec-2 {
+        margin: 20px 0px;
+    }
+
+    .booking-conform-sec-2 h1 {
+        font-size: 25px;
+    }
+
+    /* lable  */
+    .booking-conform-sec-2 .lable {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    /* details  */
+    .booking-conform-sec-2 .lable-detail {
+        font-size: 16px;
+    }
+
+
+
+
+}

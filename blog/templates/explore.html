@@ -1,0 +1,64 @@
+{% load static %}
+{% include "header.html" %}
+
+<!-- Common section for page heading   -->
+<section class="common-part-page-heading">
+    <div class="common-part-container">
+        <div class="common-part-img-sec">
+            <img src="{% static 'image/common-page-name.jpg' %}" alt="pic">
+        </div>
+        <div class="sub-sec-1-content">
+            <h1>News & Blogs </h1>
+            <h3>Home / <span>Blog</span></h3>
+        </div>
+    </div>
+</section>
+
+
+<div class="blog-explore-wrapper">
+    <div class="blog-explore-container">
+        <div class="blog-explore-title-section">
+            <h1> {{ items.blog_title }} </h1>
+        </div>
+        <div class="bloe-explore-img-sec">
+            <img src="{{ items.blog_img.url }}" alt="pic">
+            <div class="blog-explore-page-date-tags">
+                <i class="fa-solid fa-user"> </i><span> {{items.person_name}} </span>
+                <i class="fa-solid fa-calendar-days"></i><span>{{items.date}}</span>
+                <i class="fa-solid fa-tags"></i><span>{{items.food}}</span>
+            </div>
+        </div>
+        <div class="blog-explore-details-section">
+            <h2>{{items.detail | safe }}</h2>
+        </div>
+    </div>
+
+    <div class="blog-explore--comment-container">
+        
+        {% for items in all_comment %}
+        <div class="blog-explore-commnets">
+            <h3> Comment Author : <span> {{items.name}} </span> </h3>
+            <h3> Comment Body -</h3>
+            <p>{{items.comment_body}}</p>
+        </div>
+        {% endfor %}
+
+        <div class="blog-explore-comment-post">
+            <form action="#" method="post">
+                {% csrf_token %}
+                <p>
+                    <input type="text" placeholder="Write Your Name.." name="aouther">
+                </p>
+                <p>
+                    <textarea name="comment" cols="47" rows="5">
+                    </textarea>
+                </p>
+                <p>
+                    <input class="post-btn" type="submit" value="Post">
+                </p>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% include "footer.html" %}
